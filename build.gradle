@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.4.0'
+    ext.dokka_version = '0.10.1'
+    ext.leakcanary_version = '2.7'
+    repositories {
+        google()
+        jcenter()
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:${dokka_version}"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+plugins {
+    id "org.sonarqube" version "3.0"
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectName", "SDKAndroidSberID"
+        property "sonar.projectKey", "SDKAndroidSberID"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.host.url", "https://sbt-sonarqube.sigma.sbrf.ru"
+        property "sonar.java.source", JavaVersion.VERSION_1_8
+        property "sonar.java.target", JavaVersion.VERSION_1_8
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

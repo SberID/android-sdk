@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Используя данное SDK вы соглашаетесь с Пользовательским соглашением, размещенным по адресу:
+  https://www.sberbank.ru/common/img/uploaded/files/sberbank_id/agreement_sdk.pdf-->
+<resources>
+    <declare-styleable name="SberIDButton">
+        <attr name="buttonType" format="enum">
+            <!-- Стандартная зеленая кнопка -->
+            <enum name="default_type" value="0" />
+            <!-- Белый с чёрной или кастомной обводкой и зелёным лого -->
+            <enum name="white_type" value="1" />
+        </attr>
+        <attr name="buttonText" format="enum">
+            <!-- Войти по Сбер ID  -->
+            <enum name="login" value="0" />
+            <!-- Сбер ID -->
+            <enum name="login_short" value="1" />
+            <!-- Продолжить со Сбер ID -->
+            <enum name="continue_on" value="2" />
+            <!-- Заполнить со Сбер ID -->
+            <enum name="fill" value="3" />
+        </attr>
+        <attr name="buttonCornerRadius" format="dimension"/>
+        <attr name="buttonStrokeColor" format="color"/>
+        <attr name="buttonLoader" format="boolean"/>
+    </declare-styleable>
+</resources>

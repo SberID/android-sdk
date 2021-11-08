@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Используя данное SDK вы соглашаетесь с Пользовательским соглашением, размещенным по адресу:
+  https://www.sberbank.ru/common/img/uploaded/files/sberbank_id/agreement_sdk.pdf-->
+<resources>
+
+    <!--Разметры границ высоты кнопки-->
+    <dimen name="min_height">28dp</dimen>
+    <dimen name="medium_border_height">34dp</dimen>
+    <dimen name="large_border_height">50dp</dimen>
+    <dimen name="max_height">64dp</dimen>
+
+    <!--Радиус закругления кнопки-->
+    <dimen name="corner_small">4dp</dimen>
+    <dimen name="corner_large">32dp</dimen>
+
+    <!--Отступ логотипа от текста кнопки-->
+    <dimen name="sber_logo_padding">8dp</dimen>
+
+</resources>

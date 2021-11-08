@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <sberid.sdk.auth.view.SberIDButton
+        android:id="@+id/sberid_button_4"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="20dp"
+        app:buttonType="white_type"
+        app:buttonText="continue_on"
+        app:buttonCornerRadius="@dimen/corner_large" />
+
+    <sberid.sdk.auth.view.SberIDButton
+        android:id="@+id/sberid_button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:buttonCornerRadius="@dimen/corner_small" />
+
+    <sberid.sdk.auth.view.SberIDButton
+        android:id="@+id/sberid_button_2"
+        android:layout_width="28dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        app:buttonCornerRadius="@dimen/corner_small" />
+
+    <sberid.sdk.auth.view.SberIDButton
+        android:id="@+id/sberid_button"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="36dp" />
+
+</LinearLayout>

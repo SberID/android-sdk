@@ -1,0 +1,44 @@
+Manifest.java
+R.java
+
+/bak
+/out
+*/out
+/gen
+/bin
+/true
+*/gen/*
+*/tmp/*
+*/builds/*
+*/classes/*
+.idea/**
+*/.idea/*
+**/gen/**
+.DS_Store
+
+project.properties
+*/project.properties
+*.iml
+*.ipr
+local.properties
+*/local.properties
+/captures/*
+
+.directory
+*/.directory
+
+# Gradle
+.gradle
+build
+
+# Kibana
+# Игнорируем справочники, которые создаются автоматически и/или не нужны для Kibana
+/scripts/dictionaries/modules*.json
+/scripts/dictionaries/uiTestsPackages*.json
+
+#Crashlytics
+**/res/values/com_crashlytics_export_strings.xml
+**/crashlytics-build.properties
+
+#Gradle Profiler
+/gradle-user-home/*

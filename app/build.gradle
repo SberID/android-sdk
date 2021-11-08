@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "sberid.sdk.login"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // нужно для приложений на котлине, чтобы завелся кликстрим, который написан на джаве
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation project(':SberIdSDK')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+
+    //region Dependencies for support ClickStream in SberIdSDK
+    implementation("com.squareup.okhttp3:okhttp:4.8.1") // min 4.6.0
+    implementation("androidx.annotation:annotation:1.1.0")
+    implementation("androidx.core:core:1.3.2") // min 1.3.0
+    implementation("com.fasterxml.jackson.core:jackson-annotations:2.10.4")
+    implementation("com.fasterxml.jackson.core:jackson-core:2.10.4")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.10.4")
+    //end region
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
+}

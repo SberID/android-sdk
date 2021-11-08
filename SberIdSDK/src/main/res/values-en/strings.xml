@@ -1,0 +1,11 @@
+<!-- Используя данное SDK вы соглашаетесь с Пользовательским соглашением, размещенным по адресу:
+  https://www.sberbank.ru/common/img/uploaded/files/sberbank_id/agreement_sdk.pdf-->
+<resources>
+    <string name="login_sber_id_logo_text">Login with Sber ID</string>
+    <string name="login_as_text">Login as\u0020</string>
+    <string name="login_short_sber_id_logo_text">Sber ID</string>
+    <string name="continue_sber_id_logo_text">Continue with Sber ID</string>
+    <string name="fill_sber_id_logo_text">Fill with Sber ID</string>
+    <string name="talkback_click_text">%s button</string>
+    <string name="browser_not_found_toast">Browser app not found</string>
+</resources>

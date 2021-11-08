@@ -1,0 +1,2 @@
+include ':app', ':SberIdSDK'
+rootProject.name='SDK'

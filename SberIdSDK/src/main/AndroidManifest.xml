@@ -1,0 +1,26 @@
+<manifest package="sberid.sdk.auth"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- permissions for support clickstream lib -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- permissions for support targetSdkVersion 30-->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data
+                android:host="@string/sberbank_online_host"
+                android:scheme="@string/sberbank_online_scheme"/>
+        </intent>
+
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+    </queries>
+
+
+</manifest>

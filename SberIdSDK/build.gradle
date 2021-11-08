@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'org.jetbrains.dokka'
+android {
+    compileSdkVersion 30
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.4.4"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+//repositories {
+//    библитека кликстрима упаковывается в итоговый aar из jar, который кладется в libs
+//    оставим пока на будущее, к этому должны вернуться, когда мы сможем публиковаться по-нормальному через репозиторий без aar
+//
+//    apply from: "nexus_credentials.gradle"
+//    def nexus = getNexusCredentials()
+//    maven { url 'http://sbtatlas.sigma.sbrf.ru/nexus/content/repositories/MobileSBOL_release/'
+//        credentials {
+//            username = nexus.user
+//            password = nexus.password
+//        }
+//    }
+//}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation "androidx.browser:browser:1.3.0"
+
+    testImplementation "io.mockk:mockk:1.10.5"
+    testImplementation "junit:junit:4.13.1"
+    testImplementation "com.google.truth:truth:1.1.2"
+}
+
+dokka {
+    outputFormat = 'html'
+    outputDirectory = "$buildDir/javadoc"
+}

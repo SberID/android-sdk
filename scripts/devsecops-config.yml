@@ -1,0 +1,24 @@
+### Настройки DevSecOps ###
+### Общая информация о командах ###
+team:
+    - {
+        mus_code: "00FR0087",
+        mus_name: "ДБЭСиТ. SberID. Мобильная разработка",
+        mus_po_mail: "Gerasimenko.N.Serg@sberbank.ru",
+    }
+### Общая информация о приложении ###
+app:
+    sm_id: "2664966"
+    sm_name: "SberID. SDK Android"
+
+### Настройки SAST Checkmarx ###
+sast_cx:
+    creds_id: "Cx_Creds_sber_id"
+    jira_area: "SID"
+    masks: ""
+    preset_id: "14"
+    wait_qg: "2"
+
+### Настройки OSS
+oss:
+    excludes: ""
