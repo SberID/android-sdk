@@ -1,7 +1,3 @@
-/*
- * Используя данное SDK вы соглашаетесь с Пользовательским соглашением, размещенным по адресу:
- * https://www.sberbank.ru/common/img/uploaded/files/sberbank_id/agreement_sdk.pdf
- */
 package sberid.sdk.auth.model
 
 /**
