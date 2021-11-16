@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'org.jetbrains.dokka'
 android {
     compileSdkVersion 30
 
@@ -49,9 +48,4 @@ dependencies {
     testImplementation "io.mockk:mockk:1.10.5"
     testImplementation "junit:junit:4.13.1"
     testImplementation "com.google.truth:truth:1.1.2"
-}
-
-dokka {
-    outputFormat = 'html'
-    outputDirectory = "$buildDir/javadoc"
 }

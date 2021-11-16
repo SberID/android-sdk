@@ -2,17 +2,15 @@
 
 buildscript {
     ext.kotlin_version = '1.4.0'
-    ext.dokka_version = '0.10.1'
     ext.leakcanary_version = '2.7'
     repositories {
         google()
-        jcenter()
+        mavenCentral()
 
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.4'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "org.jetbrains.dokka:dokka-gradle-plugin:${dokka_version}"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -36,7 +34,7 @@ sonarqube {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
 
     }
 }
