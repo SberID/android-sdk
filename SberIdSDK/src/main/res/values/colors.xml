@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Используя данное SDK вы соглашаетесь с Пользовательским соглашением, размещенным по адресу:
-  https://www.sberbank.ru/common/img/uploaded/files/sberbank_id/agreement_sdk.pdf-->
 <resources>
     <color name="color_sber_id_button_primary">#21a038</color>
     <color name="color_sber_id_text_button_white">#212121</color>
