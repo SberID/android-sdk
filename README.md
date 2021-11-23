@@ -9,7 +9,7 @@ Android SDK помогает реализовать получение кода
 
 Добавьте файл .aar в папку libs вашего проекта: 
 
-![Скриншоти aar](images/Android1.png ':size=600')
+![Скриншоти aar](https://github.com/SberID/SberID-Issues/blob/main/Android1.png ':size=600')
 
 Перейдите в build.gradle вашего модуля: 
 
