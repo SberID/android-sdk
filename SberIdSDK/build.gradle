@@ -10,6 +10,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.4.4"
+        buildConfigField ('String', 'VERSION_NAME', "\"${defaultConfig.versionName}\"")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -22,20 +23,6 @@ android {
         }
     }
 }
-
-//repositories {
-//    библитека кликстрима упаковывается в итоговый aar из jar, который кладется в libs
-//    оставим пока на будущее, к этому должны вернуться, когда мы сможем публиковаться по-нормальному через репозиторий без aar
-//
-//    apply from: "nexus_credentials.gradle"
-//    def nexus = getNexusCredentials()
-//    maven { url 'http://sbtatlas.sigma.sbrf.ru/nexus/content/repositories/MobileSBOL_release/'
-//        credentials {
-//            username = nexus.user
-//            password = nexus.password
-//        }
-//    }
-//}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
