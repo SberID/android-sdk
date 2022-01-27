@@ -27,7 +27,6 @@ internal class SberIDCustomTabsUtils {
         private const val TAG = "CustomTabsUtils"
         private const val EXAMPLE_SCHEME = "https"
         private const val ACTION_CUSTOM_TABS_CONNECTION = "android.support.customtabs.action.CustomTabsService"
-        private const val NO_FLAG = 0
 
         /**
          * Позволяет разогреть процесс браузера. Если на устройстве не выбранных по умолчанию браузеров, вызывает
@@ -90,7 +89,7 @@ internal class SberIDCustomTabsUtils {
                 .addCategory(Intent.CATEGORY_BROWSABLE)
                 .setData(Uri.fromParts(EXAMPLE_SCHEME, StringUtils.EMPTY, null))
 
-            val resolvedActivityList = packageManager.queryIntentActivities(activityIntent, NO_FLAG)
+            val resolvedActivityList = packageManager.queryIntentActivities(activityIntent, 0)
             val packagesSupportingCustomTabs = ArrayList<ResolveInfo>()
 
             for (info in resolvedActivityList) {
