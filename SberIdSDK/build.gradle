@@ -9,7 +9,7 @@ ext {
     // group id
     PUBLISH_GROUP_ID = 'io.github.sberid'
     // текущая версия библиотеки
-    PUBLISH_VERSION = '1.4.5'
+    PUBLISH_VERSION = '1.4.6'
     // artifact id библиотеки
     PUBLISH_ARTIFACT_ID = 'SberIdSDK'
 }

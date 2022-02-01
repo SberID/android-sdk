@@ -9,7 +9,7 @@ class SberbankAnalyticsHostProvider {
     companion object {
         private val IFT_HOST = "https://viracocha6.sigma.sbrf.ru:8098/metrics/partners"
         private val PSI_HOST = "https://psiclickstream.sberbank.ru:8098/metrics/partners"
-        private val PROM_HOST = "https://sa.online.sberbank.ru:8098/metrics/partners"
+        private val PROM_HOST = "https://sve.online.sberbank.ru/metrics/partners"
 
         /**
          * Получить хост для отправки событий в Сбераналитику
