@@ -25,8 +25,6 @@ class SberIDLoginManager {
 
     companion object {
 
-        private const val NO_FLAG = 0
-
         private const val SCHEME_WEB = "https"
 
         private const val HOST_WEB = "online.sberbank.ru"
@@ -256,7 +254,7 @@ class SberIDLoginManager {
                 Intent(
                     Intent.ACTION_VIEW,
                     deeplinkUri
-                ), NO_FLAG
+                ), 0
             ).isEmpty()
         }
 
