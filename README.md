@@ -1,6 +1,6 @@
 ## Android SDK
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.sberid/SberIdSDK/1.4.5)](https://search.maven.org/artifact/io.github.sberid/SberIdSDK/1.4.5/aar)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.sberid/SberIdSDK/1.4.6)](https://search.maven.org/artifact/io.github.sberid/SberIdSDK/1.4.6/aar)
 
 ### Общие сведения
 
@@ -12,7 +12,7 @@ Android SDK помогает реализовать получение кода
 ```
 dependencies {
 	...
-	implementation 'io.github.sberid:SberIdSDK:1.4.5'
+	implementation 'io.github.sberid:SberIdSDK:1.4.6'
 	// зависимости для аналитики (см. Отправка аналитических событий) 
 	// и androidx.browser:browser:1.3.0 больше не нужно подключать
 	...
